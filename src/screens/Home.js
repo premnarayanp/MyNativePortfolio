@@ -2,8 +2,6 @@ import { FlatList, ScrollView, NativeBaseProvider, Center, HStack, Text, Avatar,
 import { Skills } from '../components';
 import { skills } from '../constants/index';
 
-
-
 const myImg = require('../assets/my_photos.png');
 export default function Home({ navigation }) {
   return (
@@ -32,12 +30,9 @@ export default function Home({ navigation }) {
 
         <View padding={'5'} borderWidth={'1'} borderColor={'gray.500'} borderRadius={'20'} marginTop={'10'} marginBottom={'10'} backgroundColor={'white'}>
           <Text borderBottomWidth={'2'} borderBottomColor={'blue.500'} bold fontSize={'20'} textAlign={'center'} color={'gray.700'} fontWeight={'bold'} >Skills</Text>
-          <FlatList
-            data={skills}
-            renderItem={({ item }) => <Skills skill={item} />}
-            keyExtractor={item => item.id}
-            showsVerticalScrollIndicator={false}
-          />
+          {
+            skills.map((item, index) => <Skills key={index} skill={item} />)
+          }
         </View>
       </ScrollView>
     </NativeBaseProvider >

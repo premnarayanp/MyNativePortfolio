@@ -2,6 +2,8 @@ import { SafeAreaView } from 'react-native';
 import { NativeBaseProvider, Icon, Box, Heading, Center, Text, FlatList } from 'native-base';
 import React from 'react';
 import DrawerCard from '../components/DrawerCard';
+import { CommonActions } from '@react-navigation/native';
+
 const data = [
     {
         title: 'Home',
@@ -24,7 +26,7 @@ const data = [
         isNew: false,
     },
     {
-        title: 'Certification',
+        title: 'Certifications',
         icon: { name: "certificate", color: "green.600", size: 10 },
     },
     {
@@ -86,6 +88,7 @@ const CustomDrawer = ({ navigation }) => {
                                     bgColor={item.bgColor}
                                     onClick={() => {
                                         navigation.closeDrawer();
+                                        navigation.dispatch(CommonActions.navigate({ name: 'Courses' }));
                                     }}
                                 />
                             );

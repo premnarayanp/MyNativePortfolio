@@ -109,3 +109,78 @@ export const skills = [
     },
 ];
 
+
+export const coreJavaSkills = [
+
+    {
+        name: 'Core Java',
+        percent: "95%",
+        bgColor: 'green.400',
+        iconName: 'language-java',
+        iconColor: 'blue.400',
+    },
+    {
+        name: 'Servlet',
+        percent: "50%",
+        bgColor: 'pink.400',
+        iconName: 'language-java',
+        iconColor: 'blue.400',
+    },
+    {
+        name: 'JSP',
+        percent: "50%",
+        bgColor: 'pink.400',
+        iconName: 'code-tags',
+        iconColor: 'blue.400',
+    },
+    {
+        name: 'JDBC',
+        percent: "80%",
+        bgColor: 'green.400',
+        iconName: 'database-plus',
+        iconColor: 'blue.400',
+    },
+    {
+        name: 'MySql',
+        percent: "60%",
+        bgColor: 'pink.400',
+        iconName: 'database',
+        iconColor: 'blue.400',
+    },
+];
+
+
+
+export const softSkills = [
+    {
+        name: 'Time Management',
+        percent: "90%",
+        bgColor: 'green.400',
+        iconName: 'clock-check-outline',
+        iconColor: 'blue.600',
+    },
+
+    {
+        name: 'Team Work',
+        percent: "90%",
+        bgColor: 'green.400',
+        iconName: 'kabaddi',
+        iconColor: 'blue.600',
+    },
+    {
+        name: 'Adaptability',
+        percent: "90%",
+        bgColor: 'green.400',
+        iconName: 'head-lightbulb-outline',
+        iconColor: 'blue.600',
+    },
+    {
+        name: 'Communication',
+        percent: "80%",
+        bgColor: 'green.400',
+        iconName: 'account-voice',
+        iconColor: 'blue.600',
+    },
+
+]
+
