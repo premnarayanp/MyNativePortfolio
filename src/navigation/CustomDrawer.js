@@ -7,34 +7,41 @@ import { CommonActions } from '@react-navigation/native';
 const data = [
     {
         title: 'Home',
+        navigate: 'Home',
         icon: { name: "home", color: "blue.600", size: 17 },
         isNew: false,
         bgColor: 'cyan'
     },
     {
         title: 'About',
+        navigate: 'Home',
         icon: { name: "information", color: "purple.600", size: 10 },
     },
     {
         title: 'Skills',
+        navigate: 'Home',
         icon: { name: "codepen", color: "pink.600", size: 10 },
         isNew: false,
     },
     {
         title: 'Courses',
+        navigate: 'Courses',
         icon: { name: "book-open-variant", color: "cyan.600", size: 10 },
         isNew: false,
     },
     {
         title: 'Certifications',
+        navigate: 'Certifications',
         icon: { name: "certificate", color: "green.600", size: 10 },
     },
     {
         title: 'Projects',
+        navigate: 'Projects',
         icon: { name: "file-code", color: "blue.400", size: 10 },
     },
     {
         title: 'More',
+        navigate: 'More',
         icon: { name: "more", color: "pink.400", size: 10 },
         isNew: false,
     },
@@ -88,7 +95,9 @@ const CustomDrawer = ({ navigation }) => {
                                     bgColor={item.bgColor}
                                     onClick={() => {
                                         navigation.closeDrawer();
-                                        navigation.dispatch(CommonActions.navigate({ name: 'Courses' }));
+                                        if (item.navigate) {
+                                            navigation.dispatch(CommonActions.navigate({ name: item.navigate }));
+                                        }
                                     }}
                                 />
                             );
