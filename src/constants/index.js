@@ -184,3 +184,32 @@ export const softSkills = [
 
 ]
 
+
+export const certificates = [
+    {
+        imageUrl: require('../assets/frontendCertificate.jpg'),
+        title: "Excellent Certification in Frontend"
+    },
+    {
+        imageUrl: require('../assets/backendCertificate.jpg'),
+        title: "Excellent Certification in Backend"
+    },
+    {
+        imageUrl: require('../assets/9-react-part-1-CN_Certificate.jpg'),
+        title: "Certification in React"
+    },
+    {
+        imageUrl: require('../assets/1-java-part-1-CN_Certificate.jpg'),
+        title: "Certification in Java"
+    },
+    {
+        imageUrl: require('../assets/exilentinjava.jpg'),
+        title: "Excellent Certification in Java"
+    },
+    {
+        imageUrl: require('../assets/4-java-DSA-2-CN_Certificate.jpg'),
+        title: "Excellent Certification in DSA"
+    },
+
+]
+

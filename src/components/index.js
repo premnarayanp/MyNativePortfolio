@@ -1,3 +1,4 @@
 import DrawerCard from './DrawerCard';
 import Skills from './Skills';
-export { DrawerCard, Skills };
+import Certificate from './Certificate';
+export { DrawerCard, Skills, Certificate };
