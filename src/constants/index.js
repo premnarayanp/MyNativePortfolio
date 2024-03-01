@@ -213,3 +213,230 @@ export const certificates = [
 
 ]
 
+export const projects = {
+    reactNative: [
+        {
+            name: 'MyNativePortfolio',
+            content: [
+                {
+                    heading: "GitHub",
+                    text: "https://github.com/premnarayanp/MyNativePortfolio",
+                    isLink: true,
+                },
+                {
+                    heading: "Summary",
+                    text: "Developed a robust and user-friendly UI for portfolio app using react native and used dummy Data."
+                },
+                {
+                    heading: "Designing",
+                    text: "Designed an intuitive UI for portfolio like Projects,Courses, Certification, etc.",
+                },
+                {
+                    heading: "Functionality",
+                    text: "Using navigation and bottom Tab to show different portfolio section.",
+                },
+                {
+                    heading: "TechStack",
+                    text: "React Native, React NativeBase ,React native element.",
+                },
+            ],
+            screenShort: [
+
+            ]
+        },
+
+        {
+            name: 'NewsApp',
+            content: [
+                {
+                    heading: "GitHub",
+                    text: "https://github.com/premnarayanp/NewsProfileApp.git",
+                    isLink: true,
+                },
+                {
+                    heading: "Summary",
+                    text: "Developed a robust and user-friendly UI for News app using react native and used News API to fetch data."
+                },
+                {
+                    heading: "Designing",
+                    text: "Designed an UI and show news API data like latest news,political news, etc.",
+                },
+                {
+                    heading: "Functionality",
+                    text: "Using navigation and bottom Tab to show different pages and show the data of News",
+                },
+                {
+                    heading: "TechStack",
+                    text: "React Native, React NativeBase ,React native element.",
+                },
+            ],
+            screenShort: [
+
+            ]
+        },
+    ],
+
+    react: [
+        {
+            name: 'Chat-App',
+            content: [
+                {
+                    heading: "GitHub",
+                    text: "https://github.com/premnarayanp/chat-app",
+                    isLink: true,
+                },
+                {
+                    heading: "Live",
+                    text: "https://premnarayanp.github.io/chat-app/",
+                    isLink: true,
+                },
+                {
+                    heading: "Summary",
+                    text: "Developed a robust and user-friendly UI for chatting app using react and used dummy JSON file for comprehensive collection of contacts chats that enhances the overall chatting experience for users."
+                },
+                {
+                    heading: "Designing",
+                    text: "Designed an intuitive UI for contact list, chat box, chat board, description box, and robust search bar for contacts.",
+                },
+                {
+                    heading: "Functionality",
+                    text: "User can create new contacts/group, send chat as text/image, receive same chat from dummy file and search contacts.",
+                },
+                {
+                    heading: "TechStack",
+                    text: "React, react Hooks, react-redux, context, provider.",
+                },
+            ],
+            screenShort: [
+
+            ]
+        }
+
+    ],
+
+    MERN: [
+        {
+            name: 'Pdf Page Editor',
+            content: [
+                {
+                    heading: "UICode",
+                    text: "https://github.com/premnarayanp/pdf_page_editor.git",
+                    isLink: true,
+                },
+                {
+                    heading: "APICode",
+                    text: "https://github.com/premnarayanp/pdf_page_extractor",
+                    isLink: true,
+                },
+                {
+                    heading: "Live",
+                    text: "https://premnarayanp.github.io/pdf_page_editor/#/users/login",
+                    isLink: true,
+                },
+                {
+                    heading: "Summary",
+                    text: "Developed a full stack web application for create and edit new pdf from selected different page order from existing pdf using MERN."
+                },
+                {
+                    heading: "Frontend",
+                    text: "Designed a user-friendly UI as pdf box for showing uploaded pdf list, version box for showing created new pdf, Custom pdf viewer with selectable checkbox for select new page, Custom selected pdf page viewer with cross button to remove selected page.",
+                },
+                {
+                    heading: "Backend",
+                    text: "Used Rest API where create authentication through passport JS using JWT, create controller for upload pdf file using multor, create new pdf using pdf-lib and perform crud operation like create, delete, download, view pdf using file system module.",
+                },
+
+                {
+                    heading: "Functionality",
+                    text: "User can login/signup/logout, upload/ view/ delete/download pdf, view list of uploaded pdfs, create/edit new pdf from existing pdf by select page, view/ delete/download/edit new pdf.",
+                },
+                {
+                    heading: "TechStack",
+                    text: "Mongo DB, express JS, passport JS, JWT authentication react, react hooks, react-redux, react router, pdf-lib and pdfjs-dist.",
+                },
+            ],
+            screenShort: [
+
+            ]
+        },
+    ],
+
+    javaScript: [
+        {
+            name: 'Meal-app',
+            content: [
+                {
+                    heading: "GitHub",
+                    text: "https://github.com/premnarayanp/meal-app.git",
+                    isLink: true,
+                },
+                {
+                    heading: "Live",
+                    text: "https://premnarayanp.github.io/meal-app/",
+                    isLink: true,
+                },
+                {
+                    heading: "Summary",
+                    text: "Design an UI for Meal app and fetch data from Meal API."
+                },
+                {
+                    heading: "Designing",
+                    text: "Designed an intuitive UI for Show the Meal,Search Meal,add and remove meal from favorite",
+                },
+                {
+                    heading: "Functionality",
+                    text: "In this we can show list of meals on API, search meal, add/remove meal in favorite.",
+                },
+                {
+                    heading: "TechStack",
+                    text: "HTML, CSS, JavaScript, Ajax, meal API,Local Storage.",
+                },
+            ],
+            screenShort: [
+
+            ]
+        },
+    ],
+
+    nodejs: [
+        {
+            name: 'Placement Cell',
+            content: [
+                {
+                    heading: "GitHub",
+                    text: "https://github.com/premnarayanp/placement_cell",
+                    isLink: true,
+                },
+                {
+                    heading: "Live",
+                    text: "https://placementscell.onrender.com/users/sign-in",
+                    isLink: true,
+                },
+                {
+                    heading: "Summary",
+                    text: "Developed a full stack web application for placement department for handle the company and student data and perform crud operation."
+                },
+                {
+                    heading: "Frontend",
+                    text: "Designed an intuitive UI for batches, students, interview and company list.",
+                },
+                {
+                    heading: "Backend",
+                    text: "Create dynamic web page using EJS where create authentication through passport JS, create controller for create csv file, perform crud operation on data with mongoose.",
+                },
+
+                {
+                    heading: "Functionality",
+                    text: "User can login signup, perform crud operation on students and company data and download the data in csv file.",
+                },
+                {
+                    heading: "TechStack",
+                    text: "HTML, CSS, JavaScript, express, EJS, mongo db.",
+                },
+            ],
+            screenShort: [
+
+            ]
+        },
+    ]
+}

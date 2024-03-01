@@ -1,11 +1,16 @@
-//import { FlatList, View, Text } from 'native-base';
-import { FlatList, View, Text } from 'react-native';
-// import { RecommendedChannelCard } from '../components/index';
-// import { recommendedNewsChannel } from '../constants/index';
+import { FlatList, View, Text } from 'native-base';
+import { ProjectCard } from '../../components/index';
+import { projects } from '../../constants/index';
 export default function NodeProjects({ navigation }) {
+    var index = 0;
     return (
         <View p='1'>
-            {/* <Text>NodeProjects</Text> */}
+            <FlatList
+                data={projects.nodejs}
+                renderItem={({ item }) => <ProjectCard project={item} index={++index} />}
+                keyExtractor={item => item.id}
+                showsVerticalScrollIndicator={false}
+            />
         </View>
     );
 }
