@@ -440,3 +440,54 @@ export const projects = {
         },
     ]
 }
+
+
+export const myContacts = {
+    socialLink: [
+        {
+            title: 'Email',
+            iconName: 'gmail',
+            iconColor: 'red.400',
+            bgColor: 'green.400',
+            link: 'mailto:premnarayanpatel223@gmail.com',
+        },
+        {
+            title: 'Linkedin',
+            iconName: 'linkedin',
+            iconColor: 'blue.400',
+            bgColor: 'green.400',
+            link: 'https://www.linkedin.com/in/prem-narayan-096347239/'
+        },
+        {
+            title: 'GitHub',
+            iconName: 'github',
+            iconColor: 'blue.400',
+            bgColor: 'green.400',
+            link: 'https://github.com/premnarayanp'
+        },
+        {
+            title: 'YouTube',
+            iconName: 'youtube',
+            iconColor: 'red.400',
+            bgColor: 'white',
+            link: 'https://youtube.com/@pnpcre.....5975?si=eH_ibSExWRX8CROF'
+        },
+    ],
+    contact: [
+        {
+            title: 'Mobile No',
+            iconName: 'cellphone',
+            iconColor: 'green.400',
+            bgColor: 'white',
+            value: 9301511759
+        },
+        {
+            title: 'Address',
+            iconName: 'map-marker',
+            iconColor: 'green.400',
+            bgColor: 'white',
+            value: "Sagar,(Madhyapradesh)"
+        },
+    ],
+
+}
