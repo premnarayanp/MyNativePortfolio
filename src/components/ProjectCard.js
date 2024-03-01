@@ -9,15 +9,21 @@ export default function ProjectsCard({ project, index }) {
                 {
                     project.content.map((item) => {
                         return (
-                            item.isLink ? <Link href={item.text}>
-                                <Text marginLeft={'0'} textAlign={'start'} color={'blue.200'} bold> {' \u25CF'}{item.heading}{":- "}{item.text}</Text>
-                            </Link>
-                                : <Text marginLeft={'0'} textAlign={'start'} color={'gray.400'} bold> {' \u25CF'}{item.heading}{":- "}{item.text}</Text>
+                            item.isLink ?
+                                <View>
+                                    <Text marginLeft={'0'} color={'gray.700'} bold> {' \u25CF'}{item.heading}{":- "}</Text>
+                                    <Link href={item.text}>
+                                        <Text marginLeft={'3'} color={'blue.400'}>{item.text}</Text>
+                                    </Link>
+                                </View>
+                                : <Text p={'0'} marginLeft={'0'} color={'gray.400'} >
+                                    <Text p={'0'} color={'gray.700'} bold> {' \u25CF'}{item.heading}{":- "}</Text>
+                                    <Text color={'gray.700'} >{item.text}</Text>
+                                </Text>
                         )
                     })
                 }
             </View>
-
         </NativeBaseProvider >
     );
 }
