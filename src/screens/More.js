@@ -1,6 +1,7 @@
 import { FlatList, ScrollView, NativeBaseProvider, Center, HStack, Text, Avatar, View, VStack, Icon, Link } from 'native-base';
 import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
-import { myContacts } from '../constants/index';
+import { myContacts, moreDetails } from '../constants/index';
+import { MoreDetailsCard } from '../components/index';
 const myImg = require('../assets/my_photos.png');
 
 export default function More({ navigation }) {
@@ -36,8 +37,10 @@ export default function More({ navigation }) {
                             </Text>
                         )
                     }
-
                 </VStack>
+
+                <MoreDetailsCard moreDetail={moreDetails.hobby} />
+                <MoreDetailsCard moreDetail={moreDetails.achievement} />
             </ScrollView>
         </NativeBaseProvider >
     );

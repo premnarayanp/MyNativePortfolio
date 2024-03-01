@@ -491,3 +491,22 @@ export const myContacts = {
     ],
 
 }
+
+export const moreDetails = {
+    hobby: {
+        title: 'Hobby',
+        content: [
+            "YouTube.",
+            "Listening Music.",
+            "Reading Books."
+        ]
+    },
+
+    achievement: {
+        title: 'Achievement',
+        content: [
+            "Participate in “National Means Come Merit”Exam 2013 and win Govt Scholarship.",
+            "Volunteered in “MUSKURAHAT Foundation”.",
+        ]
+    }
+}
