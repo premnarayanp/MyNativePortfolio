@@ -1,5 +1,5 @@
 import { SafeAreaView } from 'react-native';
-import { NativeBaseProvider, Icon, Box, Heading, Center, Text, FlatList } from 'native-base';
+import { Icon, Box, Heading, Center, Text, FlatList } from 'native-base';
 import React from 'react';
 import DrawerCard from '../components/DrawerCard';
 import { CommonActions } from '@react-navigation/native';
@@ -81,31 +81,29 @@ const data = [
 ];
 const CustomDrawer = ({ navigation }) => {
     return (
-        <NativeBaseProvider>
-            <SafeAreaView style={{ flex: 1 }}>
-                <Box style={{ backgroundColor: 'white', flex: 1 }}>
-                    <Heading size="xl" color="gray" textAlign="center" marginTop="10"> NewsApp </Heading>
-                    <FlatList
-                        data={data}
-                        renderItem={({ item, index }) => {
-                            return (
-                                <DrawerCard
-                                    title={item.title}
-                                    icon={item.icon}
-                                    bgColor={item.bgColor}
-                                    onClick={() => {
-                                        navigation.closeDrawer();
-                                        if (item.navigate) {
-                                            navigation.dispatch(CommonActions.navigate({ name: item.navigate }));
-                                        }
-                                    }}
-                                />
-                            );
-                        }}
-                    />
-                </Box>
-            </SafeAreaView>
-        </NativeBaseProvider>
+        <SafeAreaView style={{ flex: 1 }}>
+            <Box style={{ backgroundColor: 'white', flex: 1 }}>
+                <Heading size="xl" color="gray" textAlign="center" marginTop="10"> NewsApp </Heading>
+                <FlatList
+                    data={data}
+                    renderItem={({ item, index }) => {
+                        return (
+                            <DrawerCard
+                                title={item.title}
+                                icon={item.icon}
+                                bgColor={item.bgColor}
+                                onClick={() => {
+                                    navigation.closeDrawer();
+                                    if (item.navigate) {
+                                        navigation.dispatch(CommonActions.navigate({ name: item.navigate }));
+                                    }
+                                }}
+                            />
+                        );
+                    }}
+                />
+            </Box>
+        </SafeAreaView>
     );
 };
 

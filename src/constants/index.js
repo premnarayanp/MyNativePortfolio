@@ -188,27 +188,33 @@ export const softSkills = [
 export const certificates = [
     {
         imageUrl: require('../assets/frontendCertificate.jpg'),
-        title: "Excellent Certification in Frontend"
+        title: "Excellent Certification in Frontend",
+        id: "certificates1",
     },
     {
         imageUrl: require('../assets/backendCertificate.jpg'),
-        title: "Excellent Certification in Backend"
+        title: "Excellent Certification in Backend",
+        id: "certificates2",
     },
     {
         imageUrl: require('../assets/9-react-part-1-CN_Certificate.jpg'),
-        title: "Certification in React"
+        title: "Certification in React",
+        id: "certificates3",
     },
     {
         imageUrl: require('../assets/1-java-part-1-CN_Certificate.jpg'),
-        title: "Certification in Java"
+        title: "Certification in Java",
+        id: "certificates4",
     },
     {
         imageUrl: require('../assets/exilentinjava.jpg'),
-        title: "Excellent Certification in Java"
+        title: "Excellent Certification in Java",
+        id: "certificates5",
     },
     {
         imageUrl: require('../assets/4-java-DSA-2-CN_Certificate.jpg'),
-        title: "Excellent Certification in DSA"
+        title: "Excellent Certification in DSA",
+        id: "certificates6",
     },
 
 ]
@@ -217,6 +223,7 @@ export const projects = {
     reactNative: [
         {
             name: 'MyNativePortfolio',
+            id: "reactNativeProject1",
             content: [
                 {
                     heading: "GitHub",
@@ -242,11 +249,12 @@ export const projects = {
             ],
             screenShort: [
 
-            ]
+            ],
         },
 
         {
             name: 'NewsApp',
+            id: "reactNativeProject2",
             content: [
                 {
                     heading: "GitHub",
@@ -279,6 +287,7 @@ export const projects = {
     react: [
         {
             name: 'Chat-App',
+            id: "reactProject1",
             content: [
                 {
                     heading: "GitHub",
@@ -317,6 +326,7 @@ export const projects = {
     MERN: [
         {
             name: 'Pdf Page Editor',
+            id: "MERNProject1",
             content: [
                 {
                     heading: "UICode",
@@ -364,6 +374,7 @@ export const projects = {
     javaScript: [
         {
             name: 'Meal-app',
+            id: "javaScriptProject1",
             content: [
                 {
                     heading: "GitHub",
@@ -401,6 +412,7 @@ export const projects = {
     nodejs: [
         {
             name: 'Placement Cell',
+            id: "nodejsProject1",
             content: [
                 {
                     heading: "GitHub",
