@@ -12,7 +12,7 @@ const DrawerNavigator = () => {
         component={BottomTabNavigator}
         options={{
           headerShown: true,
-          title: () => null,
+          title: "",//() => null,//It give Warning Components not a valid child
           headerRight: (props) => (
             <MaterialCommunityIcons name="dots-vertical" color="gray" size={30} />
           ),
